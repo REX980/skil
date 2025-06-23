@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #005f73;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    animation: slideIn 1s ease-out forwards;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.teacher-grid, .course-grid {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teacher-card, .course-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.teacher-card:hover, .course-card:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #0a9396;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #94d2bd;
+    color: #003049;
+}
+
+footer {
+    background: #001219;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 1.2s ease-out forwards;
+}
